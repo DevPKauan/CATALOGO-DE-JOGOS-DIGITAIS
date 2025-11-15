@@ -26,6 +26,7 @@ Atributos principais:
 - avaliacao (0–10)
 - data_inicio
 - data_termino
+  
 Métodos principais:
 - atualizar_progresso()
 - finalizar() (validação mínima de 1h)
