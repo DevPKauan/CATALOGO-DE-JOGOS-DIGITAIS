@@ -13,3 +13,19 @@ Criar um sistema completo e modular que permita:
 - Organizar jogos por plataforma, gênero e coleções.
 - Gerar relatórios como total de horas, média de notas, percentual por status e top 5 mais jogados.
 - Aplicar boas práticas de POO e testes automatizados.
+
+🧩 Estrutura de classes
+Classe: Jogo 
+Atributos principais:
+-título
+-gênero
+-plataforma
+-status (NÃO INICIADO, JOGANDO, FINALIZADO)
+-horas_jogadas
+-avaliacao (0–10)
+-data_inicio
+-data_termino
+Métodos principais:
+-atualizar_progresso()
+-finalizar() (validação mínima de 1h)
+-reiniciar()
