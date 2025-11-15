@@ -17,6 +17,7 @@ Criar um sistema completo e modular que permita:
 🧩 Estrutura de classes
 
 Classe: Jogo 
+
 Atributos principais:
 - título
 - gênero
