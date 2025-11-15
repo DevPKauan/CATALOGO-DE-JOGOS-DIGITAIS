@@ -15,17 +15,18 @@ Criar um sistema completo e modular que permita:
 - Aplicar boas práticas de POO e testes automatizados.
 
 🧩 Estrutura de classes
+
 Classe: Jogo 
 Atributos principais:
--título
--gênero
--plataforma
--status (NÃO INICIADO, JOGANDO, FINALIZADO)
--horas_jogadas
--avaliacao (0–10)
--data_inicio
--data_termino
+- título
+- gênero
+- plataforma
+- status (NÃO INICIADO, JOGANDO, FINALIZADO)
+- horas_jogadas
+- avaliacao (0–10)
+- data_inicio
+- data_termino
 Métodos principais:
--atualizar_progresso()
--finalizar() (validação mínima de 1h)
--reiniciar()
+- atualizar_progresso()
+- finalizar() (validação mínima de 1h)
+- reiniciar()
