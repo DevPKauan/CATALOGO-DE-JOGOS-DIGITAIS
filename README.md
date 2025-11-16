@@ -29,6 +29,7 @@ Atributos principais:
 - data_termino
   
 Métodos principais:
-- atualizar_progresso()
-- finalizar() (validação mínima de 1h)
-- reiniciar()
+- iniciar_jogo( )
+- registrar_progresso( )
+- finalizar_jogo( )
+- reiniciar_jogo( )
