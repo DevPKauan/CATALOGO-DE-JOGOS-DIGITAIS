@@ -37,30 +37,30 @@ Métodos principais:
 ### Classe: JogoPC
 
 Atributos (Exclusivo): 
-requisitos_minimos
+- requisitos_minimos
 
 Métodos:
-configurar_requisitos()
-exibir_requisitos()
+- configurar_requisitos()
+- exibir_requisitos()
 
 ### Classe: JogoConsole
 
 Atributos (exlusivo): 
-Modelo_console
-armazenamento
+- Modelo_console
+- armazenamento
 
 Métodos:
-verificar_espaco():
+- verificar_espaco():
 
 ### Classe: JogoMobile
 
 Atributos (exclusivo): 
-tamanho_app
-loja
-versão
+- tamanho_app
+- loja
+- versão
 
 Métodos:
-atualizar_versao()
+- atualizar_versao()
 
 
 
