@@ -32,8 +32,10 @@ class JogoPC(Jogo):
         self.requisitos_minimos=requisitos_minimos
     
     def configurar_requisitos(self):
+        # configura os requisitos minimos do jogo
         pass
     def exibir_requisitos(self):
+        # exibe os requisitos minimos do jogo
         pass
 
 class JogoConsole(Jogo):
@@ -46,5 +48,7 @@ class JogoMobile(Jogo):
         self.tamanho_app=tamanho_app
         self.versao=versao
         self.loja=loja
+        
     def atualizar_versao(nova_versao):
+        # atualiza o jogo pra sua versão mais recente
         pass
