@@ -1,11 +1,11 @@
 # 🕹️ Catálogo de Jogos Digitais
-📌 Descrição do Projeto
+## 📌 Descrição do Projeto
 
 Este projeto consiste no desenvolvimento de um sistema de catálogo pessoal de jogos digitais, permitindo gerenciar jogos, acompanhar progresso, organizar por categorias e gerar relatórios de desempenho.
 O sistema poderá ser executado via CLI (linha de comando) ou como uma API mínima (FastAPI/Flask — opcional). A aplicação aplica princípios de Programação Orientada a Objetos, incluindo herança, encapsulamento, métodos especiais e regras de negócio configuráveis.
 A persistência será realizada em JSON ou SQLite, de forma desacoplada do domínio.
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Criar um sistema completo e modular que permita:
 - Cadastrar e gerenciar jogos do usuário.
@@ -14,9 +14,9 @@ Criar um sistema completo e modular que permita:
 - Gerar relatórios como total de horas, média de notas, percentual por status e top 5 mais jogados.
 - Aplicar boas práticas de POO e testes automatizados.
 
-🧩 Estrutura de classes
+## 🧩 Estrutura de classes
 
-Classe: Jogo 
+### Classe: Jogo 
 
 Atributos principais:
 - título
@@ -29,7 +29,38 @@ Atributos principais:
 - data_termino
   
 Métodos principais:
-- iniciar_jogo( )
-- registrar_progresso( )
-- finalizar_jogo( )
-- reiniciar_jogo( )
+- iniciar_jogo()
+- registrar_progresso()
+- finalizar_jogo()
+- reiniciar_jogo()
+
+### Classe: JogoPC
+
+Atributos (Exclusivo): 
+requisitos_minimos
+
+Métodos:
+configurar_requisitos()
+exibir_requisitos()
+
+### Classe: JogoConsole
+
+Atributos (exlusivo): 
+Modelo_console
+armazenamento
+
+Métodos:
+verificar_espaco():
+
+### Classe: JogoMobile
+
+Atributos (exclusivo): 
+tamanho_app
+loja
+versão
+
+Métodos:
+atualizar_versao()
+
+
+
