@@ -1,3 +1,35 @@
+import json
+
+# classe para persistencia de dados em json
+class PersistenciaJSON:
+
+    def salvar(jogador, arquivo="dados.json"):
+        with open(arquivo, "w", encoding="utf-8") as f:
+            json.dump({
+                "jogador": jogador.nome,
+                "jogos": [j.to_dict() for j in jogador.jogos]
+            }, f, indent=4)
+
+    def carregar(arquivo="dados.json"):
+        with open(arquivo, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+
+class Relatorio:
+
+    @staticmethod
+    def gerar(jogador):
+        print("\n=== RELATÓRIO DE JOGOS ===")
+        print(f"Jogador: {jogador.nome}\n")
+
+        for jogo in jogador.jogos:
+            print(f"Título: {jogo.titulo}")
+            print(f"Gênero: {jogo.genero}")
+            print(f"Plataforma: {jogo.plataforma}")
+            print(f"Status: {jogo._status}")
+            print(f"Horas jogadas: {jogo._horas_jogadas}")
+            print("-" * 30)
+
 # Classe Base
 class Jogo:
     def __init__(self, titulo, genero, plataforma, status, horas_jogadas, avaliacao, data_inicio, data_termino):
@@ -88,3 +120,27 @@ class JogoMobile(Jogo):
 
     def atualizar_versao(self, nova_versao):
         self.__versao = nova_versao
+
+
+# classe jogador 
+class Jogador:
+    def __init__(self, nome):
+        self.nome = nome
+        self.jogos = []  # relação: Jogador -> Jogos
+
+    def adicionar_jogo(self, jogo):
+        self.jogos.append(jogo)
+
+    def listar_jogos(self):
+        return [jogo.titulo for jogo in self.jogos]
+    
+  # Serialização para JSON
+    def to_dict(self):
+        return {
+            "tipo": self.__class__.__name__,
+            "titulo": self.titulo,
+            "genero": self.genero,
+            "plataforma": self.plataforma,
+            "status": self._status,
+            "horas_jogadas": self._horas_jogadas
+        }
