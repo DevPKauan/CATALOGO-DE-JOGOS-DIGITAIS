@@ -295,6 +295,15 @@ class CLI:
         return None
     
 if __name__ == "__main__":
-    jogador = Jogador("Pedro")
+    nome = input("Digite o nome do jogador: ")
+    jogador = Jogador(nome)
+
+    try:
+        PersistenciaJSON.carregar()
+        print("Arquivo JSON encontrado.")
+    except FileNotFoundError:
+        PersistenciaJSON.salvar(jogador)
+        print("Arquivo JSON criado automaticamente.")
+
     cli = CLI(jogador)
     cli.menu()
