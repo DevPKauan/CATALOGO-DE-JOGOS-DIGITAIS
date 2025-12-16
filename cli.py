@@ -1,6 +1,5 @@
 """
-Interface de linha de comando (CLI) — opção "Relatório" carrega do arquivo antes de gerar.
-Removida a opção separada de "Carregar dados".
+Interface de linha de comando (CLI)
 """
 from typing import Optional
 from jogador import Jogador
