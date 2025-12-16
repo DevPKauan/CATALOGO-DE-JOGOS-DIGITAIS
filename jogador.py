@@ -1,6 +1,5 @@
 """
 Classe Jogador: gerencia lista de jogos e regras (duplicados, limite simultâneos).
-Removida a funcionalidade de meta anual.
 """
 from typing import List
 from jogo import Jogo
