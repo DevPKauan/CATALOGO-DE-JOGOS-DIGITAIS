@@ -1,6 +1,5 @@
 """
 Modelos de jogo: Jogo (base) e subclasses.
-Observação: funcionalidade de "finalizar jogo" removida.
 """
 from datetime import date
 from typing import Optional
